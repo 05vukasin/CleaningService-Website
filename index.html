@@ -1,482 +1,1110 @@
 <!DOCTYPE html>
 <html lang="sr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Čišćenje — Profesionalne usluge čišćenja | Beograd</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="styles.css" />
-  <meta name="description" content="Čišćenje — profesionalne usluge čišćenja stanova, kuća i poslovnog prostora u Beogradu. Brzo, pouzdano i pedantno. Besplatna procena." />
-  <style>
-    html { scroll-behavior: smooth; overflow-x: hidden; }
-    body { overflow-x: hidden; }
-    img, video { max-width: 100%; height: auto; }
-  </style>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Čišćenje — Profesionalne usluge čišćenja | Beograd</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <meta
+      name="description"
+      content="Čišćenje — profesionalne usluge čišćenja stanova, kuća i poslovnog prostora u Beogradu. Brzo, pouzdano i pedantno. Besplatna procena."
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+      }
+      body {
+        overflow-x: hidden;
+      }
+      img,
+      video {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
 
-<body class="font-body bg-background scroll-smooth">
-  <!-- Fixed Navigation Header -->
-  <header class="fixed top-0 inset-x-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
-    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
-        <!-- Logo -->
-        <a href="#pocetak" class="flex items-center">
-          <svg class="h-10 w-10 text-primary" viewBox="0 0 40 40" fill="currentColor" aria-hidden="true">
-            <circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="2" />
-            <path d="M12 20l6 6 10-10" stroke="currentColor" stroke-width="2" fill="none" />
-            <circle cx="20" cy="8" r="2" fill="currentColor" />
-            <circle cx="32" cy="20" r="2" fill="currentColor" />
-            <circle cx="20" cy="32" r="2" fill="currentColor" />
-            <circle cx="8" cy="20" r="2" fill="currentColor" />
-          </svg>
-          <span class="ml-3 text-xl font-headline text-text-primary">Čišćenje</span>
-        </a>
-
-        <!-- Desktop Navigation -->
-        <div class="hidden md:flex items-center space-x-8">
-          <a href="#usluge" class="text-text-secondary hover:text-primary transition-quick font-medium">Usluge</a>
-          <a href="#o-nama" class="text-text-secondary hover:text-primary transition-quick font-medium">O nama</a>
-          <a href="#lokacije" class="text-text-secondary hover:text-primary transition-quick font-medium">Lokacije</a>
-          <a href="#kontakt" class="text-text-secondary hover:text-primary transition-quick font-medium">Kontakt</a>
-        </div>
-
-        <!-- CTA (manje na telefonu) -->
-        <div class="flex items-center space-x-4">
-          <a href="tel:+381631234567"
-             class="btn-primary text-xs px-2 py-1 sm:text-sm sm:px-3 sm:py-2 md:text-base md:px-4 md:py-2">
-            Pozovi
+  <body class="font-body bg-background scroll-smooth">
+    <!-- Fixed Navigation Header -->
+    <header
+      class="fixed top-0 inset-x-0 z-50 bg-background/90 backdrop-blur-md border-b border-border"
+    >
+      <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <!-- Logo -->
+          <a href="#pocetak" class="flex items-center shrink-0">
+            <svg
+              class="h-8 w-8 text-primary"
+              viewBox="0 0 40 40"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <circle
+                cx="20"
+                cy="20"
+                r="18"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              />
+              <path
+                d="M12 20l6 6 10-10"
+                stroke="currentColor"
+                stroke-width="2"
+                fill="none"
+              />
+            </svg>
+            <span
+              class="ml-3 text-lg sm:text-xl font-headline text-text-primary"
+              >Čišćenje</span
+            >
           </a>
-        </div>
-      </div>
-    </nav>
-  </header>
 
-  <!-- Spacer zbog fixed header-a -->
-  <div aria-hidden="true" class="h-16"></div>
-
-  <!-- Hero Section -->
-  <section id="pocetak" class="relative min-h-[80vh] flex items-center bg-gradient-to-br from-primary-50 to-secondary-50 scroll-mt-24">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
-        <!-- Levo - Vizual -->
-        <div class="relative">
-          <div class="aspect-video rounded-card overflow-hidden shadow-subtle">
-            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1600&auto=format&fit=crop"
-                 alt="Tim Čišćenje u radu" class="w-full h-full object-cover" loading="lazy" />
-          </div>
-          <!-- Plutajuća ocena -->
-          <div class="absolute -bottom-6 -right-6 bg-background rounded-card p-4 shadow-subtle">
-            <div class="text-2xl font-headline text-primary">4.9★</div>
-            <div class="text-sm text-text-secondary">Prosečna ocena</div>
-          </div>
-        </div>
-
-        <!-- Desno - Value + brzi kontakti (bez forme) -->
-        <div class="space-y-6">
-          <h1 class="text-4xl lg:text-5xl font-headline text-text-primary mb-2 text-balance">
-            Uredan prostor, <span class="text-primary">više vremena za vas</span>
-          </h1>
-          <p class="text-xl text-text-secondary">
-            Profesionalno čišćenje stanova, kuća i poslovnih prostora u Beogradu. Brzo, pedantno i pouzdano.
-          </p>
-
-          <div class="bg-background rounded-card p-6 shadow-card border border-border">
-            <p class="text-sm text-text-secondary mb-3">Brzi kontakt</p>
-            <div class="grid sm:grid-cols-3 gap-3">
-              <a href="tel:+381631234567" class="w-full inline-flex items-center justify-center rounded-md border border-border px-4 py-2 hover:border-primary hover:text-primary transition">
-                Pozovi
-              </a>
-              <a href="https://wa.me/381631234567" target="_blank" rel="noopener"
-                 class="w-full inline-flex items-center justify-center rounded-md border border-border px-4 py-2 hover:border-primary hover:text-primary transition">
-                WhatsApp
-              </a>
-              <a href="mailto:info@ciscanje.rs" class="w-full inline-flex items-center justify-center rounded-md border border-border px-4 py-2 hover:border-primary hover:text-primary transition">
-                Pošalji e-poštu
-              </a>
-            </div>
-            <p class="text-xs text-text-secondary mt-3 text-center">Besplatna procena • Bez skrivenih troškova • Garancija zadovoljstva</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Trust / Ikonice -->
-  <section class="py-16 bg-background">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="text-center">
-          <div class="w-16 h-16 bg-success/10 rounded-full flex items-center justify-center mx-auto mb-4">
-            <svg class="w-8 h-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-            </svg>
-          </div>
-          <h3 class="text-lg font-headline text-text-primary mb-2">Osigurano</h3>
-          <p class="text-text-secondary">Zaštita imovine i potpuna bezbrižnost.</p>
-        </div>
-        <div class="text-center">
-          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-            </svg>
-          </div>
-          <h3 class="text-lg font-headline text-text-primary mb-2">Proveren tim</h3>
-          <p class="text-text-secondary">Obučeni i provereni radnici kojima verujete.</p>
-        </div>
-        <div class="text-center">
-          <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
-            <svg class="w-8 h-8 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-            </svg>
-          </div>
-          <h3 class="text-lg font-headline text-text-primary mb-2">Garancija zadovoljstva</h3>
-          <p class="text-text-secondary">Ako nešto nije po meri, vraćamo se i rešavamo.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- O nama -->
-  <section id="o-nama" class="py-20 bg-white scroll-mt-24">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl lg:text-4xl font-headline text-text-primary mb-4">O kompaniji Čišćenje</h2>
-        <p class="text-xl text-text-secondary max-w-2xl mx-auto">
-          Više od 8 godina iskustva u profesionalnom čišćenju širom Beograda — reputaciju gradimo preciznošću, poštovanjem rokova i korektnim odnosom.
-        </p>
-      </div>
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
-        <div class="space-y-6">
-          <h3 class="text-3xl font-bold">Naša misija</h3>
-          <p class="text-lg text-text-secondary">
-            Besprekorno čist prostor i jednostavna saradnja. Ekološki prihvatljiva sredstva, pouzdan tim i fer cena.
-          </p>
-          <div class="grid sm:grid-cols-2 gap-6">
-            <div class="flex items-start space-x-3">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big h-6 w-6 text-green-500 mt-1"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>
-              <div><h4 class="text-lg font-headline text-text-primary">Eko sredstva</h4><p class="text-text-secondary">Bezbedno za porodicu i ljubimce</p></div>
-            </div>
-            <div class="flex items-start space-x-3">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big h-6 w-6 text-green-500 mt-1"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>
-              <div><h4 class="text-lg font-headline text-text-primary">Osigurano</h4><p class="text-text-secondary">Pokriveni smo osiguranjem</p></div>
-            </div>
-            <div class="flex items-start space-x-3">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big h-6 w-6 text-green-500 mt-1"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>
-              <div><h4 class="text-lg font-headline text-text-primary">Brza podrška</h4><p class="text-text-secondary">Tu smo kada vam zatreba</p></div>
-            </div>
-            <div class="flex items-start space-x-3">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big h-6 w-6 text-green-500 mt-1"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>
-              <div><h4 class="text-lg font-headline text-text-primary">Fer cena</h4><p class="text-text-secondary">Kvalitet uz korektne uslove</p></div>
-            </div>
-          </div>
-        </div>
-        <div class="relative">
-          <div class="aspect-video rounded-2xl bg-gradient-to-br from-blue-500 to-purple-600 p-1 shadow-2xl">
-            <div class="w-full h-full bg-white rounded-xl flex items-center justify-center">
-              <div class="text-center">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users h-16 w-16 text-blue-600 mx-auto mb-4"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                <h4 class="text-xl font-bold text-text-primary">Profesionalni tim</h4>
-                <p class="text-text-secondary">Obučeni i odgovorni čistači</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Usluge -->
-  <section id="usluge" class="py-20 bg-surface scroll-mt-24">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl lg:text-4xl font-headline text-text-primary mb-4">Usluge</h2>
-        <p class="text-xl text-text-secondary max-w-2xl mx-auto">Generalno i redovno čišćenje, useljenje/iseljenje i poslovni prostori.</p>
-      </div>
-
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <!-- Stambeno -->
-        <div class="card group hover:shadow-subtle transition">
-          <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition">
-            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-            </svg>
-          </div>
-          <h3 class="text-lg font-headline text-text-primary mb-2">Stambeni prostori</h3>
-          <p class="text-text-secondary mb-4">Generalno čišćenje, redovno održavanje i useljenje/iseljenje.</p>
-          <div class="flex justify-between items-center">
-            <span class="text-sm text-primary font-medium">Zatražite ponudu</span>
-            <a href="tel:+381631234567" class="text-primary hover:text-primary-700 transition" aria-label="Pozovi">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- Poslovno -->
-        <div class="card group hover:shadow-subtle transition">
-          <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-accent/20 transition">
-            <svg class="w-6 h-6 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-            </svg>
-          </div>
-          <h3 class="text-lg font-headline text-text-primary mb-2">Poslovni prostori</h3>
-          <p class="text-text-secondary mb-4">Kancelarije, maloprodaja i objekti — po merama vašeg posla.</p>
-          <div class="flex justify-between items-center">
-            <span class="text-sm text-primary font-medium">Prilagođena ponuda</span>
-            <a href="tel:+381631234567" class="text-primary hover:text-primary-700 transition" aria-label="Pozovi">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- Specijalno -->
-        <div class="card group hover:shadow-subtle transition">
-          <div class="w-12 h-12 bg-success/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-success/20 transition">
-            <svg class="w-6 h-6 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-            </svg>
-          </div>
-          <h3 class="text-lg font-headline text-text-primary mb-2">Specijalne usluge</h3>
-          <p class="text-text-secondary mb-4">Tepisi, stakla, mašinsko pranje podova, čišćenje posle radova.</p>
-          <div class="flex justify-between items-center">
-            <span class="text-sm text-primary font-medium">Na upit</span>
-            <a href="tel:+381631234567" class="text-primary hover:text-primary-700 transition" aria-label="Pozovi">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- Hitne intervencije -->
-        <div class="card group hover:shadow-subtle transition border-l-4 border-l-error">
-          <div class="w-12 h-12 bg-error/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-error/20 transition">
-            <svg class="w-6 h-6 text-error" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-            </svg>
-          </div>
-          <h3 class="text-lg font-headline text-text-primary mb-2">Hitne intervencije</h3>
-          <p class="text-text-secondary mb-4">24/7 dostupnost za specifične situacije i sanacije.</p>
-          <div class="flex justify-between items-center">
-            <span class="text-sm text-error font-medium">Pozovite odmah</span>
-            <a href="tel:+381631234567" class="text-primary hover:text-primary-700 transition" aria-label="Pozovi">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Lokacije & Društveni dokaz -->
-  <section id="lokacije" class="py-20 bg-surface scroll-mt-24">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
-        <!-- Mapa/Foto -->
-        <div>
-          <h2 class="text-3xl font-headline text-text-primary mb-6">Beograd i okolina</h2>
-          <p class="text-text-secondary mb-8">
-            Pokrivamo sve gradske opštine i šire područje. Proverite dostupnost za vašu adresu.
-          </p>
-
-          <div class="bg-background rounded-card p-6 shadow-card">
-            <div class="aspect-video bg-surface rounded overflow-hidden mb-4">
-              <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1600&auto=format&fit=crop"
-                   alt="Beograd" class="w-full h-full object-cover" loading="lazy" />
-            </div>
-            <div class="flex items-center justify-between">
-              <div>
-                <h4 class="font-headline text-text-primary">Područje usluge</h4>
-                <p class="text-sm text-text-secondary">25+ naselja</p>
-              </div>
-              <a href="tel:+381631234567" class="btn-primary">Pozovi</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Brojke -->
-        <div class="space-y-8">
-          <div>
-            <h2 class="text-3xl font-headline text-text-primary mb-6">Proveren izbor</h2>
-            <p class="text-text-secondary mb-8">Pridružite se zadovoljnoj zajednici klijenata u Beogradu.</p>
+          <!-- Desktop Navigation -->
+          <div class="hidden md:flex items-center gap-8">
+            <a
+              href="#usluge"
+              class="text-text-secondary hover:text-primary font-medium transition-colors"
+              >Usluge</a
+            >
+            <a
+              href="#o-nama"
+              class="text-text-secondary hover:text-primary font-medium transition-colors"
+              >O nama</a
+            >
+            <a
+              href="#lokacije"
+              class="text-text-secondary hover:text-primary font-medium transition-colors"
+              >Lokacije</a
+            >
+            <a
+              href="#kontakt"
+              class="text-text-secondary hover:text-primary font-medium transition-colors"
+              >Kontakt</a
+            >
           </div>
 
-          <div class="grid grid-cols-2 gap-6">
-            <div class="text-center">
-              <div class="text-4xl font-headline text-primary mb-2">1.500+</div>
-              <div class="text-text-secondary">Obavljenih čišćenja</div>
-            </div>
-            <div class="text-center">
-              <div class="text-4xl font-headline text-primary mb-2">4.9/5</div>
-              <div class="text-text-secondary">Prosečna ocena</div>
-            </div>
-            <div class="text-center">
-              <div class="text-4xl font-headline text-primary mb-2">98%</div>
-              <div class="text-text-secondary">Povratnih klijenata</div>
-            </div>
-            <div class="text-center">
-              <div class="text-4xl font-headline text-primary mb-2">24/7</div>
-              <div class="text-text-secondary">Hitne intervencije</div>
-            </div>
-          </div>
-
-          <!-- Hitni baner -->
-          <div class="bg-error/10 border border-error/20 rounded-card p-6">
-            <div class="flex items-center">
-              <div class="w-12 h-12 bg-error/20 rounded-full flex items-center justify-center mr-4">
-                <svg class="w-6 h-6 text-error" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+          <!-- Actions -->
+          <div class="flex items-center gap-2">
+            <!-- Mobile quick actions (bez WhatsApp-a) -->
+            <div class="flex md:hidden items-center gap-2">
+              <!-- Call -->
+              <a
+                href="tel:+381631234567"
+                class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-primary text-white shadow-sm ring-1 ring-primary/25 active:scale-95 transition"
+                aria-label="Pozovi 063 123 4567"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a2 2 0 01-2 2C10.07 22 2 13.93 2 4a2 2 0 012-2h2.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.2 2.2z"
+                  />
                 </svg>
+              </a>
+              <!-- Mail -->
+              <a
+                href="mailto:info@ciscanje.rs"
+                class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white text-text-primary shadow-sm ring-1 ring-border active:scale-95 transition"
+                aria-label="Pošalji e-poštu"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M2 6a2 2 0 012-2h16a2 2 0 012 2v.217l-10 6.25L2 6.217V6zm0 2.383V18a2 2 0 002 2h16a2 2 0 002-2V8.383l-9.445 5.902a2 2 0 01-2.11 0L2 8.383z"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <!-- Desktop CTA -->
+            <a
+              href="tel:+381631234567"
+              class="hidden md:inline-flex items-center gap-2 h-10 rounded-full bg-primary px-5 text-white font-medium shadow-sm hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary/30 transition"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4 opacity-90"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a2 2 0 01-2 2C10.07 22 2 13.93 2 4a2 2 0 012-2h2.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.2 2.2z"
+                />
+              </svg>
+              <span>Pozovi 063 123 4567</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Spacer zbog fixed header-a -->
+    <div aria-hidden="true" class="h-16"></div>
+
+    <!-- Hero Section -->
+    <section
+      id="pocetak"
+      class="relative min-h-[80vh] flex items-center bg-gradient-to-br from-primary-50 to-secondary-50 scroll-mt-24"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <!-- Levo - Vizual -->
+          <div class="relative">
+            <div
+              class="aspect-video rounded-card overflow-hidden shadow-subtle"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1600&auto=format&fit=crop"
+                alt="Tim Čišćenje u radu"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+            <!-- Plutajuća ocena -->
+            <div
+              class="absolute -bottom-6 -right-6 bg-background rounded-card p-4 shadow-subtle"
+            >
+              <div class="text-2xl font-headline text-primary">4.9★</div>
+              <div class="text-sm text-text-secondary">Prosečna ocena</div>
+            </div>
+          </div>
+
+          <!-- Desno - Value + brzi kontakti (bez forme) -->
+          <div class="space-y-6">
+            <h1
+              class="text-4xl lg:text-5xl font-headline text-text-primary mb-2 text-balance"
+            >
+              Uredan prostor,
+              <span class="text-primary">više vremena za vas</span>
+            </h1>
+            <p class="text-xl text-text-secondary">
+              Profesionalno čišćenje stanova, kuća i poslovnih prostora u
+              Beogradu. Brzo, pedantno i pouzdano.
+            </p>
+
+            <div
+              class="bg-background rounded-card p-6 shadow-card border border-border"
+            >
+              <p class="text-sm text-text-secondary mb-3">Brzi kontakt</p>
+              <div class="grid sm:grid-cols-3 gap-3">
+                <a
+                  href="tel:+381631234567"
+                  class="w-full inline-flex items-center justify-center rounded-md border border-border px-4 py-2 hover:border-primary hover:text-primary transition"
+                >
+                  Pozovi
+                </a>
+                <a
+                  href="https://wa.me/381631234567"
+                  target="_blank"
+                  rel="noopener"
+                  class="w-full inline-flex items-center justify-center rounded-md border border-border px-4 py-2 hover:border-primary hover:text-primary transition"
+                >
+                  WhatsApp
+                </a>
+                <a
+                  href="mailto:info@ciscanje.rs"
+                  class="w-full inline-flex items-center justify-center rounded-md border border-border px-4 py-2 hover:border-primary hover:text-primary transition"
+                >
+                  Pošalji e-poštu
+                </a>
               </div>
-              <div class="flex-1">
-                <h4 class="font-headline text-text-primary mb-1">Hitne intervencije</h4>
-                <p class="text-sm text-text-secondary">Dostupni 24/7</p>
-              </div>
-              <a href="tel:+381631234567" class="btn-primary">Pozovi odmah</a>
+              <p class="text-xs text-text-secondary mt-3 text-center">
+                Besplatna procena • Bez skrivenih troškova • Garancija
+                zadovoljstva
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Call to action -->
-  <section class="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-4xl font-bold text-white mb-4">Spremni da počnemo?</h2>
-      <p class="text-xl text-blue-100 mb-8">Zakažite termin — odgovaramo brzo.</p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="tel:+381631234567" class="inline-flex items-center justify-center h-11 rounded-md bg-white text-blue-600 hover:bg-gray-100 text-lg px-8 py-4">Pozovi</a>
-        <a href="mailto:info@ciscanje.rs" class="inline-flex items-center justify-center h-11 rounded-md bg-white text-blue-600 hover:bg-gray-100 text-lg px-8 py-4">Pošalji e-poštu</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- (Uklonjeno: sekcija "Naši poslovi" i sve kontakt forme) -->
-
-  <!-- Kontakt (bez forme, samo direktne akcije) -->
-  <section id="kontakt" class="py-20 bg-surface scroll-mt-24">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl lg:text-4xl font-headline text-text-primary mb-4">Kontakt</h2>
-        <p class="text-xl text-text-secondary">Direktan kontakt — telefon, WhatsApp ili e-pošta</p>
-      </div>
-
-      <div class="grid lg:grid-cols-3 gap-8">
-        <div class="rounded-lg bg-card text-card-foreground border border-border p-8 text-center">
-          <h3 class="text-lg font-headline text-text-primary mb-2">Telefon</h3>
-          <p class="text-text-secondary mb-4">063 123 4567</p>
-          <a href="tel:+381631234567" class="btn-primary inline-block">Pozovi sada</a>
-        </div>
-
-        <div class="rounded-lg bg-card text-card-foreground border border-border p-8 text-center">
-          <h3 class="text-lg font-headline text-text-primary mb-2">WhatsApp</h3>
-          <p class="text-text-secondary mb-4">063 123 4567</p>
-          <a href="https://wa.me/381631234567" target="_blank" rel="noopener" class="btn-primary inline-block">Otvori WhatsApp</a>
-        </div>
-
-        <div class="rounded-lg bg-card text-card-foreground border border-border p-8 text-center">
-          <h3 class="text-lg font-headline text-text-primary mb-2">E-pošta</h3>
-          <p class="text-text-secondary mb-4">info@ciscanje.rs</p>
-          <a href="mailto:info@ciscanje.rs" class="btn-primary inline-block">Pošalji e-poštu</a>
-        </div>
-      </div>
-
-      <div class="mt-12 grid md:grid-cols-2 gap-8">
-        <div class="flex items-start space-x-4">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin h-6 w-6 text-blue-600 mt-1"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
-          <div>
-            <h3 class="text-lg font-headline text-text-primary">Adresa</h3>
-            <p class="text-text-secondary">Beograd, Srbija</p>
-          </div>
-        </div>
-        <div class="flex items-start space-x-4">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock h-6 w-6 text-blue-600 mt-1"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-          <div>
-            <h3 class="text-lg font-headline text-text-primary">Radno vreme</h3>
-            <p class="text-text-secondary">Pon–Pet: 08–18h • Sub: 09–16h • Ned: ne radimo</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-text-primary text-white py-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid md:grid-cols-4 gap-8">
-        <!-- Info -->
-        <div>
-          <div class="flex items-center mb-4">
-            <svg class="h-8 w-8 text-white" viewBox="0 0 40 40" fill="currentColor" aria-hidden="true">
-              <circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="2" />
-              <path d="M12 20l6 6 10-10" stroke="currentColor" stroke-width="2" fill="none" />
-              <circle cx="20" cy="8" r="2" fill="currentColor" />
-              <circle cx="32" cy="20" r="2" fill="currentColor" />
-              <circle cx="20" cy="32" r="2" fill="currentColor" />
-              <circle cx="8" cy="20" r="2" fill="currentColor" />
-            </svg>
-            <span class="ml-2 text-lg font-headline">Čišćenje</span>
-          </div>
-          <p class="text-gray-300 mb-4">Profesionalno čišćenje u Beogradu — uredno, tačno i bez muke.</p>
-          <div class="flex flex-wrap gap-4">
-            <a href="tel:+381631234567" class="text-gray-300 hover:text-white transition-quick">Telefon: 063 123 4567</a>
-            <a href="https://wa.me/381631234567" target="_blank" rel="noopener" class="text-gray-300 hover:text-white transition-quick">WhatsApp</a>
-            <a href="mailto:info@ciscanje.rs" class="text-gray-300 hover:text-white transition-quick">info@ciscanje.rs</a>
-          </div>
-        </div>
-
-        <!-- Usluge -->
-        <div>
-          <h4 class="font-headline text-white mb-4">Usluge</h4>
-          <ul class="space-y-2 text-gray-300">
-            <li><a href="#usluge" class="hover:text-white transition-quick">Stambeni prostori</a></li>
-            <li><a href="#usluge" class="hover:text-white transition-quick">Poslovni prostori</a></li>
-            <li><a href="#usluge" class="hover:text-white transition-quick">Generalno čišćenje</a></li>
-            <li><a href="#usluge" class="hover:text-white transition-quick">Useljenje/Iseljenje</a></li>
-            <li><a href="#usluge" class="hover:text-white transition-quick">Hitne intervencije</a></li>
-          </ul>
-        </div>
-
-        <!-- Kompanija -->
-        <div>
-          <h4 class="font-headline text-white mb-4">Kompanija</h4>
-          <ul class="space-y-2 text-gray-300">
-            <li><a href="#o-nama" class="hover:text-white transition-quick">O nama</a></li>
-            <li><a href="#lokacije" class="hover:text-white transition-quick">Lokacije</a></li>
-            <li><a href="#kontakt" class="hover:text-white transition-quick">Kontakt</a></li>
-          </ul>
-        </div>
-
-        <!-- Brzi kontakt -->
-        <div>
-          <h4 class="font-headline text-white mb-4">Brzi kontakt</h4>
-          <ul class="space-y-2 text-gray-300">
-            <li><a href="tel:+381631234567" class="hover:text-white transition-quick">Pozovi: 063 123 4567</a></li>
-            <li><a href="https://wa.me/381631234567" target="_blank" rel="noopener" class="hover:text-white transition-quick">WhatsApp poruka</a></li>
-            <li><a href="mailto:info@ciscanje.rs" class="hover:text-white transition-quick">Pošalji e-poštu</a></li>
-            <li class="flex items-start">
-              <svg class="w-4 h-4 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+    <!-- Trust / Ikonice -->
+    <section class="py-16 bg-background">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div
+              class="w-16 h-16 bg-success/10 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-success"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                />
               </svg>
-              Beograd, Srbija
-            </li>
-          </ul>
+            </div>
+            <h3 class="text-lg font-headline text-text-primary mb-2">
+              Osigurano
+            </h3>
+            <p class="text-text-secondary">
+              Zaštita imovine i potpuna bezbrižnost.
+            </p>
+          </div>
+          <div class="text-center">
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-primary"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-lg font-headline text-text-primary mb-2">
+              Proveren tim
+            </h3>
+            <p class="text-text-secondary">
+              Obučeni i provereni radnici kojima verujete.
+            </p>
+          </div>
+          <div class="text-center">
+            <div
+              class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-accent-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-lg font-headline text-text-primary mb-2">
+              Garancija zadovoljstva
+            </h3>
+            <p class="text-text-secondary">
+              Ako nešto nije po meri, vraćamo se i rešavamo.
+            </p>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-300">
-        <p>© 2025 Čišćenje. Sva prava zadržana.</p>
+    <!-- O nama -->
+    <section id="o-nama" class="py-20 bg-white scroll-mt-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-headline text-text-primary mb-4">
+            O kompaniji Čišćenje
+          </h2>
+          <p class="text-xl text-text-secondary max-w-2xl mx-auto">
+            Više od 8 godina iskustva u profesionalnom čišćenju širom Beograda —
+            reputaciju gradimo preciznošću, poštovanjem rokova i korektnim
+            odnosom.
+          </p>
+        </div>
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="space-y-6">
+            <h3 class="text-3xl font-bold">Naša misija</h3>
+            <p class="text-lg text-text-secondary">
+              Besprekorno čist prostor i jednostavna saradnja. Ekološki
+              prihvatljiva sredstva, pouzdan tim i fer cena.
+            </p>
+            <div class="grid sm:grid-cols-2 gap-6">
+              <div class="flex items-start space-x-3">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-circle-check-big h-6 w-6 text-green-500 mt-1"
+                >
+                  <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                  <path d="m9 11 3 3L22 4"></path>
+                </svg>
+                <div>
+                  <h4 class="text-lg font-headline text-text-primary">
+                    Eko sredstva
+                  </h4>
+                  <p class="text-text-secondary">
+                    Bezbedno za porodicu i ljubimce
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-circle-check-big h-6 w-6 text-green-500 mt-1"
+                >
+                  <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                  <path d="m9 11 3 3L22 4"></path>
+                </svg>
+                <div>
+                  <h4 class="text-lg font-headline text-text-primary">
+                    Osigurano
+                  </h4>
+                  <p class="text-text-secondary">Pokriveni smo osiguranjem</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-circle-check-big h-6 w-6 text-green-500 mt-1"
+                >
+                  <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                  <path d="m9 11 3 3L22 4"></path>
+                </svg>
+                <div>
+                  <h4 class="text-lg font-headline text-text-primary">
+                    Brza podrška
+                  </h4>
+                  <p class="text-text-secondary">Tu smo kada vam zatreba</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-circle-check-big h-6 w-6 text-green-500 mt-1"
+                >
+                  <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                  <path d="m9 11 3 3L22 4"></path>
+                </svg>
+                <div>
+                  <h4 class="text-lg font-headline text-text-primary">
+                    Fer cena
+                  </h4>
+                  <p class="text-text-secondary">Kvalitet uz korektne uslove</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="relative">
+            <div
+              class="aspect-video rounded-2xl bg-gradient-to-br from-blue-500 to-purple-600 p-1 shadow-2xl"
+            >
+              <div
+                class="w-full h-full bg-white rounded-xl flex items-center justify-center"
+              >
+                <div class="text-center">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-users h-16 w-16 text-blue-600 mx-auto mb-4"
+                  >
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                  <h4 class="text-xl font-bold text-text-primary">
+                    Profesionalni tim
+                  </h4>
+                  <p class="text-text-secondary">Obučeni i odgovorni čistači</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </footer>
+    </section>
 
-  <!-- Mobilno: WhatsApp plutajuće dugme (direktno otvara chat) -->
-  <a href="https://wa.me/381631234567"
-     target="_blank" rel="noopener"
-     class="fixed bottom-8 right-8 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 z-50"
-     aria-label="WhatsApp">
-    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/>
-    </svg>
-  </a>
-</body>
+    <!-- Usluge -->
+    <section id="usluge" class="py-20 bg-surface scroll-mt-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-headline text-text-primary mb-4">
+            Usluge
+          </h2>
+          <p class="text-xl text-text-secondary max-w-2xl mx-auto">
+            Generalno i redovno čišćenje, useljenje/iseljenje i poslovni
+            prostori.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Stambeno -->
+          <div class="card group hover:shadow-subtle transition">
+            <div
+              class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition"
+            >
+              <svg
+                class="w-6 h-6 text-primary"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                />
+              </svg>
+            </div>
+            <h3 class="text-lg font-headline text-text-primary mb-2">
+              Stambeni prostori
+            </h3>
+            <p class="text-text-secondary mb-4">
+              Generalno čišćenje, redovno održavanje i useljenje/iseljenje.
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-primary font-medium"
+                >Zatražite ponudu</span
+              >
+              <a
+                href="tel:+381631234567"
+                class="text-primary hover:text-primary-700 transition"
+                aria-label="Pozovi"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Poslovno -->
+          <div class="card group hover:shadow-subtle transition">
+            <div
+              class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-accent/20 transition"
+            >
+              <svg
+                class="w-6 h-6 text-accent-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                />
+              </svg>
+            </div>
+            <h3 class="text-lg font-headline text-text-primary mb-2">
+              Poslovni prostori
+            </h3>
+            <p class="text-text-secondary mb-4">
+              Kancelarije, maloprodaja i objekti — po merama vašeg posla.
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-primary font-medium"
+                >Prilagođena ponuda</span
+              >
+              <a
+                href="tel:+381631234567"
+                class="text-primary hover:text-primary-700 transition"
+                aria-label="Pozovi"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Specijalno -->
+          <div class="card group hover:shadow-subtle transition">
+            <div
+              class="w-12 h-12 bg-success/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-success/20 transition"
+            >
+              <svg
+                class="w-6 h-6 text-success"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-lg font-headline text-text-primary mb-2">
+              Specijalne usluge
+            </h3>
+            <p class="text-text-secondary mb-4">
+              Tepisi, stakla, mašinsko pranje podova, čišćenje posle radova.
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-primary font-medium">Na upit</span>
+              <a
+                href="tel:+381631234567"
+                class="text-primary hover:text-primary-700 transition"
+                aria-label="Pozovi"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hitne intervencije -->
+          <div
+            class="card group hover:shadow-subtle transition border-l-4 border-l-error"
+          >
+            <div
+              class="w-12 h-12 bg-error/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-error/20 transition"
+            >
+              <svg
+                class="w-6 h-6 text-error"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-lg font-headline text-text-primary mb-2">
+              Hitne intervencije
+            </h3>
+            <p class="text-text-secondary mb-4">
+              24/7 dostupnost za specifične situacije i sanacije.
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-error font-medium">Pozovite odmah</span>
+              <a
+                href="tel:+381631234567"
+                class="text-primary hover:text-primary-700 transition"
+                aria-label="Pozovi"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lokacije & Društveni dokaz -->
+    <section id="lokacije" class="py-20 bg-surface scroll-mt-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <!-- Mapa/Foto -->
+          <div>
+            <h2 class="text-3xl font-headline text-text-primary mb-6">
+              Beograd i okolina
+            </h2>
+            <p class="text-text-secondary mb-8">
+              Pokrivamo sve gradske opštine i šire područje. Proverite
+              dostupnost za vašu adresu.
+            </p>
+
+            <div class="bg-background rounded-card p-6 shadow-card">
+              <div class="aspect-video bg-surface rounded overflow-hidden mb-4">
+                <img
+                  src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1600&auto=format&fit=crop"
+                  alt="Beograd"
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div class="flex items-center justify-between">
+                <div>
+                  <h4 class="font-headline text-text-primary">
+                    Područje usluge
+                  </h4>
+                  <p class="text-sm text-text-secondary">25+ naselja</p>
+                </div>
+                <a href="tel:+381631234567" class="btn-primary">Pozovi</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Brojke -->
+          <div class="space-y-8">
+            <div>
+              <h2 class="text-3xl font-headline text-text-primary mb-6">
+                Proveren izbor
+              </h2>
+              <p class="text-text-secondary mb-8">
+                Pridružite se zadovoljnoj zajednici klijenata u Beogradu.
+              </p>
+            </div>
+
+            <div class="grid grid-cols-2 gap-6">
+              <div class="text-center">
+                <div class="text-4xl font-headline text-primary mb-2">
+                  1.500+
+                </div>
+                <div class="text-text-secondary">Obavljenih čišćenja</div>
+              </div>
+              <div class="text-center">
+                <div class="text-4xl font-headline text-primary mb-2">
+                  4.9/5
+                </div>
+                <div class="text-text-secondary">Prosečna ocena</div>
+              </div>
+              <div class="text-center">
+                <div class="text-4xl font-headline text-primary mb-2">98%</div>
+                <div class="text-text-secondary">Povratnih klijenata</div>
+              </div>
+              <div class="text-center">
+                <div class="text-4xl font-headline text-primary mb-2">24/7</div>
+                <div class="text-text-secondary">Hitne intervencije</div>
+              </div>
+            </div>
+
+            <!-- Hitni baner -->
+            <div class="bg-error/10 border border-error/20 rounded-card p-6">
+              <div class="flex items-center">
+                <div
+                  class="w-12 h-12 bg-error/20 rounded-full flex items-center justify-center mr-4"
+                >
+                  <svg
+                    class="w-6 h-6 text-error"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                    />
+                  </svg>
+                </div>
+                <div class="flex-1">
+                    <h4 class="font-headline text-text-primary mb-1">Hitne intervencije</h4>
+                    <p class="text-sm text-text-secondary">Dostupni 24/7</p>
+                    </div>
+
+                    <!-- Sakriveno na telefonu, vidljivo od md naviše -->
+                    <a href="tel:+381631234567"
+                    class="hidden md:inline-flex btn-primary">
+                    Pozovi
+                    </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to action -->
+    <section class="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-4xl font-bold text-white mb-4">Spremni da počnemo?</h2>
+        <p class="text-xl text-blue-100 mb-8">
+          Zakažite termin — odgovaramo brzo.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="tel:+381631234567"
+            class="inline-flex items-center justify-center h-11 rounded-md bg-white text-blue-600 hover:bg-gray-100 text-lg px-8 py-4"
+            >Pozovi</a
+          >
+          <a
+            href="mailto:info@ciscanje.rs"
+            class="inline-flex items-center justify-center h-11 rounded-md bg-white text-blue-600 hover:bg-gray-100 text-lg px-8 py-4"
+            >Pošalji e-poštu</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- (Uklonjeno: sekcija "Naši poslovi" i sve kontakt forme) -->
+
+    <!-- Kontakt (bez forme, samo direktne akcije) -->
+    <section id="kontakt" class="py-20 bg-surface scroll-mt-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl lg:text-4xl font-headline text-text-primary mb-4">
+            Kontakt
+          </h2>
+          <p class="text-xl text-text-secondary">
+            Direktan kontakt — telefon, WhatsApp ili e-pošta
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-8">
+          <div
+            class="rounded-lg bg-card text-card-foreground border border-border p-8 text-center"
+          >
+            <h3 class="text-lg font-headline text-text-primary mb-2">
+              Telefon
+            </h3>
+            <p class="text-text-secondary mb-4">063 123 4567</p>
+            <a href="tel:+381631234567" class="btn-primary inline-block"
+              >Pozovi sada</a
+            >
+          </div>
+
+          <div
+            class="rounded-lg bg-card text-card-foreground border border-border p-8 text-center"
+          >
+            <h3 class="text-lg font-headline text-text-primary mb-2">
+              WhatsApp
+            </h3>
+            <p class="text-text-secondary mb-4">063 123 4567</p>
+            <a
+              href="https://wa.me/381631234567"
+              target="_blank"
+              rel="noopener"
+              class="btn-primary inline-block"
+              >Otvori WhatsApp</a
+            >
+          </div>
+
+          <div
+            class="rounded-lg bg-card text-card-foreground border border-border p-8 text-center"
+          >
+            <h3 class="text-lg font-headline text-text-primary mb-2">
+              E-pošta
+            </h3>
+            <p class="text-text-secondary mb-4">info@ciscanje.rs</p>
+            <a href="mailto:info@ciscanje.rs" class="btn-primary inline-block"
+              >Pošalji e-poštu</a
+            >
+          </div>
+        </div>
+
+        <div class="mt-12 grid md:grid-cols-2 gap-8">
+          <div class="flex items-start space-x-4">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-map-pin h-6 w-6 text-blue-600 mt-1"
+            >
+              <path
+                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+              ></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <div>
+              <h3 class="text-lg font-headline text-text-primary">Adresa</h3>
+              <p class="text-text-secondary">Beograd, Srbija</p>
+            </div>
+          </div>
+          <div class="flex items-start space-x-4">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-clock h-6 w-6 text-blue-600 mt-1"
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            <div>
+              <h3 class="text-lg font-headline text-text-primary">
+                Radno vreme
+              </h3>
+              <p class="text-text-secondary">
+                Pon–Pet: 08–18h • Sub: 09–16h • Ned: ne radimo
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-4 gap-8">
+          <!-- Info -->
+          <div>
+            <div class="flex items-center mb-4">
+              <svg
+                class="h-8 w-8 text-white"
+                viewBox="0 0 40 40"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <circle
+                  cx="20"
+                  cy="20"
+                  r="18"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="M12 20l6 6 10-10"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  fill="none"
+                />
+                <circle cx="20" cy="8" r="2" fill="currentColor" />
+                <circle cx="32" cy="20" r="2" fill="currentColor" />
+                <circle cx="20" cy="32" r="2" fill="currentColor" />
+                <circle cx="8" cy="20" r="2" fill="currentColor" />
+              </svg>
+              <span class="ml-2 text-lg font-headline">Čišćenje</span>
+            </div>
+            <p class="text-gray-300 mb-4">
+              Profesionalno čišćenje u Beogradu — uredno, tačno i bez muke.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a
+                href="tel:+381631234567"
+                class="text-gray-300 hover:text-white transition-quick"
+                >Telefon: 063 123 4567</a
+              >
+              <a
+                href="https://wa.me/381631234567"
+                target="_blank"
+                rel="noopener"
+                class="text-gray-300 hover:text-white transition-quick"
+                >WhatsApp</a
+              >
+              <a
+                href="mailto:info@ciscanje.rs"
+                class="text-gray-300 hover:text-white transition-quick"
+                >info@ciscanje.rs</a
+              >
+            </div>
+          </div>
+
+          <!-- Usluge -->
+          <div>
+            <h4 class="font-headline text-white mb-4">Usluge</h4>
+            <ul class="space-y-2 text-gray-300">
+              <li>
+                <a href="#usluge" class="hover:text-white transition-quick"
+                  >Stambeni prostori</a
+                >
+              </li>
+              <li>
+                <a href="#usluge" class="hover:text-white transition-quick"
+                  >Poslovni prostori</a
+                >
+              </li>
+              <li>
+                <a href="#usluge" class="hover:text-white transition-quick"
+                  >Generalno čišćenje</a
+                >
+              </li>
+              <li>
+                <a href="#usluge" class="hover:text-white transition-quick"
+                  >Useljenje/Iseljenje</a
+                >
+              </li>
+              <li>
+                <a href="#usluge" class="hover:text-white transition-quick"
+                  >Hitne intervencije</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Kompanija -->
+          <div>
+            <h4 class="font-headline text-white mb-4">Kompanija</h4>
+            <ul class="space-y-2 text-gray-300">
+              <li>
+                <a href="#o-nama" class="hover:text-white transition-quick"
+                  >O nama</a
+                >
+              </li>
+              <li>
+                <a href="#lokacije" class="hover:text-white transition-quick"
+                  >Lokacije</a
+                >
+              </li>
+              <li>
+                <a href="#kontakt" class="hover:text-white transition-quick"
+                  >Kontakt</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Brzi kontakt -->
+          <div>
+            <h4 class="font-headline text-white mb-4">Brzi kontakt</h4>
+            <ul class="space-y-2 text-gray-300">
+              <li>
+                <a
+                  href="tel:+381631234567"
+                  class="hover:text-white transition-quick"
+                  >Pozovi: 063 123 4567</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://wa.me/381631234567"
+                  target="_blank"
+                  rel="noopener"
+                  class="hover:text-white transition-quick"
+                  >WhatsApp poruka</a
+                >
+              </li>
+              <li>
+                <a
+                  href="mailto:info@ciscanje.rs"
+                  class="hover:text-white transition-quick"
+                  >Pošalji e-poštu</a
+                >
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="w-4 h-4 mr-2 mt-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+                Beograd, Srbija
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-300"
+        >
+          <p>© 2025 Čišćenje. Sva prava zadržana.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Mobilno: WhatsApp plutajuće dugme (direktno otvara chat) -->
+    <a
+      href="https://wa.me/381631234567"
+      target="_blank"
+      rel="noopener"
+      class="fixed bottom-8 right-8 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 z-50"
+      aria-label="WhatsApp"
+    >
+      <svg
+        class="h-6 w-6"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"
+        />
+      </svg>
+    </a>
+  </body>
 </html>
