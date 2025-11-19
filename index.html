@@ -1,15 +1,56 @@
 <!DOCTYPE html>
-<html lang="sr">
+<html lang="sr-RS">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Čišćenje — Profesionalne usluge čišćenja | Beograd</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles.css" />
+
+    <!-- TITLE + DESCRIPTION -->
+    <title>
+      Stanex čišćenje Beograd – profesionalno čišćenje stanova i poslovnih prostora
+    </title>
     <meta
       name="description"
-      content="Čišćenje — profesionalne usluge čišćenja stanova, kuća i poslovnog prostora u Beogradu. Brzo, pouzdano i pedantno. Besplatna procena."
+      content="Stanex – profesionalno čišćenje stanova, kuća, poslovnih prostora i zgrada u Beogradu. Generalno i redovno čišćenje, useljenje/iseljenje i hitne intervencije. Besplatna procena."
     />
+
+    <!-- KANONIKALNI URL (izmeni domen ako je drugačiji) -->
+    <link rel="canonical" href="https://stanex.com/" />
+
+    <!-- OSNOVNO SEO PONAŠANJE -->
+    <meta name="robots" content="index,follow" />
+
+    <!-- OPEN GRAPH / SOCIAL -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Stanex čišćenje Beograd" />
+    <meta
+      property="og:title"
+      content="Stanex čišćenje Beograd – profesionalno čišćenje stanova i poslovnih prostora"
+    />
+    <meta
+      property="og:description"
+      content="Agencija Stanex – generalno i redovno čišćenje stanova, kuća i poslovnih prostora u Beogradu. Besplatna procena, fer cene i pouzdan tim."
+    />
+    <meta property="og:url" content="https://stanex.com/" />
+    <meta property="og:locale" content="sr_RS" />
+    <!-- Stavi pravu sliku hero fotke sa sajta -->
+    <meta property="og:image" content="https://stanex.com/IMG_2519.jpg" />
+
+    <!-- OPTIONAL: TWITTER CARD -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Stanex čišćenje Beograd – profesionalno čišćenje"
+    />
+    <meta
+      name="twitter:description"
+      content="Čišćenje stanova, kuća i poslovnog prostora u Beogradu. Generalno čišćenje, useljenje/iseljenje i hitne intervencije."
+    />
+    <meta name="twitter:image" content="https://stanex.com/IMG_2519.jpg" />
+
+    <!-- TAILWIND + TVOJ CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+
     <style>
       html {
         scroll-behavior: smooth;
@@ -24,8 +65,34 @@
         height: auto;
       }
     </style>
-  </head>
 
+    <!-- LOCAL BUSINESS / CLEANING SERVICE SCHEMA.ORG -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Stanex - profesionalno čišćenje",
+        "image": "https://ciscenje-stanex.rs/IMG_2519.jpg",
+        "url": "https://ciscenje-stanex.rs",
+        "telephone": "+381631763487",
+        "email": "stanex.agencija@gmail.com",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Beograd",
+          "addressRegion": "RS",
+          "addressCountry": "RS"
+        },
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Beograd"
+          }
+        ],
+        "description": "Stanex je agencija za profesionalno čišćenje stanova, kuća i poslovnih prostora u Beogradu – generalno i redovno čišćenje, useljenje/iseljenje i hitne intervencije."
+      }
+    </script>
+  </head>
   <body class="font-body bg-background scroll-smooth">
     <!-- Fixed Navigation Header -->
     <header
@@ -39,14 +106,12 @@
             <span class="ml-3 text-lg sm:text-xl font-headline text-text-primary">Stanex</span>
           
           </a>
-
+          
           <!-- Desktop Navigation -->
           <div class="hidden md:flex items-center gap-8">
-            <a
-              href="#usluge"
-              class="text-text-secondary hover:text-primary font-medium transition-colors"
-              >Usluge</a
-            >
+            <a href="#usluge" class="text-text-secondary hover:text-primary font-medium transition-colors">
+              Usluge
+            </a>
             <a
               href="#o-nama"
               class="text-text-secondary hover:text-primary font-medium transition-colors"
@@ -141,12 +206,12 @@
             <div
               class="aspect-video rounded-card overflow-hidden shadow-subtle"
             >
-              <img
-                src="IMG_2519.JPG"
-                alt="Tim Čišćenje u radu"
-                class="w-full h-full object-cover"
-                loading="lazy"
-              />
+            <img
+            src="IMG_2519.JPG"
+            alt="Stanex tim za profesionalno čišćenje stanova i poslovnog prostora u Beogradu"
+            class="w-full h-full object-cover"
+            loading="lazy"
+          />
             </div>
             <!-- Plutajuća ocena -->
             <div
@@ -158,17 +223,12 @@
           </div>
 
           <!-- Desno - Value + brzi kontakti (bez forme) -->
-          <div class="space-y-6">
-            <h1
-              class="text-4xl lg:text-5xl font-headline text-text-primary mb-2 text-balance"
-            >
-              Uredan prostor,
-              <span class="text-primary">više vremena za vas</span>
-            </h1>
-            <p class="text-xl text-text-secondary">
-              Profesionalno čišćenje stanova, kuća i poslovnih prostora u
-              Beogradu. Brzo, pedantno i pouzdano.
-            </p>
+          <h1 class="text-4xl lg:text-5xl font-headline text-text-primary mb-2 text-balance">
+          Profesionalno čišćenje stanova i poslovnih prostora u Beogradu
+        </h1>
+        <p class="text-xl text-text-secondary">
+          Pokrivamo sve gradske opštine: Novi Beograd, Zemun, Vračar, Voždovac, Zvezdara, Palilula i druge delove Beograda. Proverite dostupnost za vašu adresu.
+        </p>
 
             <div
               class="bg-background rounded-card p-6 shadow-card border border-border"
@@ -674,18 +734,20 @@
             <div class="bg-background rounded-card p-6 shadow-card">
               <div class="aspect-video bg-surface rounded overflow-hidden mb-4">
                 <img
-                  src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1600&auto=format&fit=crop"
-                  alt="Beograd"
-                  class="w-full h-full object-cover"
-                  loading="lazy"
-                />
+                src="Image 19. 11. 2025. at 12.48.JPG"
+                alt="Beograd — područje usluge agencije Stanex za čišćenje"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
               </div>
               <div class="flex items-center justify-between">
                 <div>
                   <h4 class="font-headline text-text-primary">
                     Područje usluge
                   </h4>
-                  <p class="text-sm text-text-secondary">25+ naselja</p>
+                  <p class="text-text-secondary mb-8">
+                    Pokrivamo sve gradske opštine: Novi Beograd, Zemun, Vračar, Voždovac, Zvezdara, Palilula i druge delove Beograda. Proverite dostupnost za vašu adresu.
+                  </p>
                 </div>
                 <a href="tel:+381631763487" class="btn-primary">Pozovi</a>
               </div>
